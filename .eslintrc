@@ -25,6 +25,7 @@
         ],
         "func-names": "off",
         "no-await-in-loop": "warn",
+        "no-console": "off",
         "no-eval": "error",
         "no-implied-eval": "error",
         "no-param-reassign": "warn",
