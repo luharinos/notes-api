@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint . --ext .js",
     "lint:fix": "eslint . --ext .js --fix",
-    "start": "node src/app.js",
+    "start": "node src/app/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "commonjs",

@@ -23,6 +23,7 @@
             "error",
             100
         ],
+        "consistent-return": "off",
         "func-names": "off",
         "no-await-in-loop": "warn",
         "no-console": "off",
