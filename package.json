@@ -1,0 +1,25 @@
+{
+  "name": "notes-api",
+  "version": "1.0.0",
+  "description": "API for notes app",
+  "main": "src/app/app.js",
+  "scripts": {
+    "lint": "eslint . --ext .js",
+    "lint:fix": "eslint . --ext .js --fix",
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "commonjs",
+  "keywords": [],
+  "author": "rahulvsoni1997@gmail.com",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/luharinos/notes-api.git",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
