@@ -1,12 +1,12 @@
-const { Router } = require('express');
-const { getAllNotes, getNoteById, createNote, updateNote, deleteNoteById } = require('./controller');
+import { Router } from 'express';
+import { getAllNotes, getNoteById, createNote, updateNote, deleteNoteById } from './controller.js';
 
-const routes = Router();
+const router = Router();
 
-routes.get('/', getAllNotes);
-routes.get('/:id', getNoteById);
-routes.post('/', createNote);
-routes.put('/:id', updateNote);
-routes.delete('/:id', deleteNoteById);
+router.get('/', getAllNotes);
+router.get('/:id', getNoteById);
+router.post('/', createNote);
+router.put('/:id', updateNote);
+router.delete('/:id', deleteNoteById);
 
-module.exports = routes;
+export default router;

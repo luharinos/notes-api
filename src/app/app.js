@@ -1,13 +1,16 @@
-require('dotenv').config();
-const express = require('express');
-const notesRouter = require('./router');
+/* eslint-disable import/extensions */
+import { config } from 'dotenv';
+import express from 'express';
+import router from './router.js';
+
+config();
 
 const app = express();
 
 app.use(express.json());
 
 // context path - "api/notes"
-app.use('/api/notes', notesRouter);
+app.use('/api/notes', router);
 
 // Default route
 app.get('/health', (req, res) => {
