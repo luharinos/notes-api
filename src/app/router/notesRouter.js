@@ -1,8 +1,12 @@
 import { Router } from 'express';
 import { getAllNotes, getNoteById, createNote, updateNote, deleteNoteById } from '../controller/notesController.js';
+import authenticate from '../middleware/authenticate.js';
 import handleError from '../utils/errorHandler.js';
 
 const router = Router();
+
+// Middleware to authenticate all routes
+router.use(authenticate);
 
 router.get('/', getAllNotes);
 router.get('/:id', getNoteById);
