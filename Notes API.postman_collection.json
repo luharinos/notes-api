@@ -3,9 +3,7 @@
 		"_postman_id": "a6d31aa0-5b6c-4c8c-9d9a-60cfc1617475",
 		"name": "Notes API",
 		"description": "This API allows users to manage a simple \"Notes Taking System\" where they can create, read, update, and delete notes.",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "10767546",
-		"_collection_link": "https://zee5-search-reco.postman.co/workspace/Search-and-Reco-Workspace~573fda22-66d2-47dc-8f3a-995cd3424cad/collection/10767546-a6d31aa0-5b6c-4c8c-9d9a-60cfc1617475?action=share&source=collection_link&creator=10767546"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
