@@ -14,7 +14,7 @@ router.post('/', createNote);
 router.put('/:id', updateNote);
 router.delete('/:id', deleteNoteById);
 
-router.use((error, req, res, next) => {
+router.use((error, req, res, _next) => {
 	handleError(error, res);
 });
 

@@ -29,7 +29,7 @@
         "no-console": "off",
         "no-eval": "error",
         "no-implied-eval": "error",
-        "no-param-reassign": "warn",
+        "no-param-reassign": "off",
         "no-plusplus": "off",
         "no-unused-vars": [
             "warn",

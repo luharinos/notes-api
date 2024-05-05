@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 import Note from '../models/Note.js';
-import db from '../dbClient.js';
-import { checkValidDate, isValidUUID } from '../utils/helper.js';
+import db from '../utils/dbClient.js';
+import { checkValidDate, isValidUUID } from '../utils/dataHelper.js';
 
 // Import custom error classes
 import BadRequestError from '../utils/exceptions/BadRequestError.js';
