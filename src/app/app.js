@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import { config } from 'dotenv';
 import express from 'express';
-import router from './router.js';
+import router from './router/notesRouter.js';
 
 config();
 
