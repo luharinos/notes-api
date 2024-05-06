@@ -1,6 +1,6 @@
 import { config } from 'dotenv';
 import express from 'express';
-import router from './router/notesRouter.js';
+import router from './router/notes.router.js';
 
 config();
 
