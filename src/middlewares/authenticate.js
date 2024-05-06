@@ -1,4 +1,4 @@
-import UnauthorizedError from '../utils/exceptions/UnauthorisedError.js';
+import UnauthorizedError from '../exceptions/UnauthorisedError.js';
 
 export default function validateApiKey(req, res, next) {
 	// Check if the API key is provided in the request headers

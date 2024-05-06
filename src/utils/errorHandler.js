@@ -1,4 +1,4 @@
-import BaseError from './exceptions/BaseError.js';
+import BaseError from '../exceptions/BaseError.js';
 
 export default function handleError(error, res) {
 	if (error instanceof BaseError) {

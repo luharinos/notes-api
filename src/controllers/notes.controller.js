@@ -4,9 +4,9 @@ import db from '../utils/dbClient.js';
 import { checkValidDate, isValidUUID } from '../utils/dataHelper.js';
 
 // Import custom error classes
-import BadRequestError from '../utils/exceptions/BadRequestError.js';
-import ResourceNotFoundError from '../utils/exceptions/ResourceNotFoundError.js';
-import ResourceConflictError from '../utils/exceptions/ResourceConflictError.js';
+import BadRequestError from '../exceptions/BadRequestError.js';
+import ResourceNotFoundError from '../exceptions/ResourceNotFoundError.js';
+import ResourceConflictError from '../exceptions/ResourceConflictError.js';
 
 const { notes: NOTES } = db.data;
 

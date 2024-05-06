@@ -1,6 +1,6 @@
 import { config } from 'dotenv';
 import express from 'express';
-import router from './router/notes.router.js';
+import router from './routes/notes.routes.js';
 
 config();
 
@@ -24,3 +24,5 @@ try {
 	console.error('Error occurred:', error);
 	process.exit(1);
 }
+
+export default app;
