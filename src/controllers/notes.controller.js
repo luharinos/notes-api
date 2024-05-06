@@ -18,7 +18,11 @@ export function getAllNotes(req, res) {
 	const parsedStartDate = startDate ? new Date(startDate) : null;
 	const parsedEndDate = endDate ? new Date(endDate) : null;
 
-	if (checkValidDate(parsedStartDate) || checkValidDate(parsedEndDate)) {
+	if (
+		checkValidDate(parsedStartDate) ||
+		checkValidDate(parsedEndDate) ||
+		(parsedStartDate && parsedEndDate && parsedStartDate >= parsedEndDate)
+	) {
 		throw new BadRequestError('Invalid start or end date.');
 	}
 
@@ -47,7 +51,6 @@ export function getNoteById(req, res) {
 	const { id } = req.params;
 
 	if (!isValidUUID(id)) throw new BadRequestError('Invalid note ID.');
-	// return res.status(400).send('Invalid note ID.');
 
 	// find the note by id
 	const note = NOTES.find((n) => n.id === id);
